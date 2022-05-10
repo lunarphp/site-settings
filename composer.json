@@ -1,0 +1,45 @@
+{
+  "name": "getcandy/site-settings",
+  "type": "project",
+  "description": "Add site settings to GetCandy.",
+  "keywords": ["getcandy", "laravel", "ecommerce", "e-commerce", "headless", "store", "shop"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "GetCandy",
+      "homepage": "https://getcandy.io/"
+    }
+  ],
+  "require": {
+      "php": "^8.0",
+      "getcandy/admin": "*"
+  },
+  "require-dev": {
+      "phpunit/phpunit": "^9.5.10",
+      "mockery/mockery": "^1.4.4",
+      "orchestra/testbench": "^6.0|^7.0"
+  },
+  "autoload": {
+      "psr-4": {
+        "GetCandy\\Settings\\": "src/",
+        "GetCandy\\Settings\\Database\\Factories\\": "database/factories"
+      }
+  },
+  "autoload-dev": {
+      "psr-4": {
+          "GetCandy\\Settings\\Tests\\": "tests/"
+      }
+  },
+  "extra": {
+    "getcandy": {
+        "name": "Site Settings"
+    },
+    "laravel": {
+        "providers": [
+            "GetCandy\\Settings\\SettingsServiceProvider"
+        ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
