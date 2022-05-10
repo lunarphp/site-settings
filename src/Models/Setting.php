@@ -5,6 +5,7 @@ namespace GetCandy\Settings\Models;
 use GetCandy\Base\BaseModel;
 use GetCandy\Settings\Database\Factories\SettingFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Facades\Cache;
 
 class Setting extends BaseModel
 {
@@ -17,6 +18,18 @@ class Setting extends BaseModel
      * @var array
      */
     protected $guarded = [];
+
+    /**
+     * The "booted" method of the model.
+     *
+     * @return void
+     */
+    protected static function booted()
+    {
+        static::updated(function ($setting) {
+            Cache::forget($setting->key);
+        });
+    }
 
     /**
      * Return a new factory instance for the model.

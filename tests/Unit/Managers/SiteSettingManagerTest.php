@@ -59,4 +59,27 @@ class SiteSettingManagerTest extends TestCase
         $this->assertEquals('bar', $value);
         $this->assertEquals('bar', Cache::get('foo'));
     }
+
+    /** @test **/
+    public function cache_is_refreshed_on_setting_update()
+    {
+        $setting = Setting::factory()->create([
+            'key' => 'foo',
+            'value' => 'bar',
+        ]);
+
+        $value = SiteSettings::get('foo');
+
+        $this->assertEquals('bar', $value);
+        $this->assertEquals('bar', Cache::get('foo'));
+
+        $setting->update([
+            'value' => 'foo',
+        ]);
+
+        $value = SiteSettings::get('foo');
+
+        $this->assertEquals('foo', $value);
+        $this->assertEquals('foo', Cache::get('foo'));
+    }
 }
