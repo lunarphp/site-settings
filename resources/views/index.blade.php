@@ -1,11 +1,4 @@
 <div class="flex-col px-8 space-y-4 md:px-12">
-  <div class="items-center justify-between md:flex">
-    <strong class="block text-lg font-bold md:text-2xl">
-      Site Settings
-    </strong>
-  </div>
-
-
   <x-hub::slideover title="Edit site setting" form="save" wire:model="siteSettingId">
     @if($this->setting)
       <div class="space-y-4">

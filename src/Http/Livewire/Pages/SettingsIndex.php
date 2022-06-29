@@ -88,6 +88,7 @@ class SettingsIndex extends Component
         return view('settings::index')
             ->layout('adminhub::layouts.settings', [
                 'title' => 'Site Settings',
+                'menu' => 'settings',
             ]);
     }
 }
