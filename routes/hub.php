@@ -1,11 +1,11 @@
 <?php
 
-use GetCandy\Hub\Http\Middleware\Authenticate;
-use GetCandy\Settings\Http\Livewire\Pages\SettingsIndex;
+use Lunar\Hub\Http\Middleware\Authenticate;
+use Lunar\Settings\Http\Livewire\Pages\SettingsIndex;
 use Illuminate\Support\Facades\Route;
 
 Route::group([
-    'prefix'     => config('getcandy-hub.system.path', 'hub'),
+    'prefix'     => config('lunar-hub.system.path', 'hub'),
     'middleware' => [
         'web',
     ],

@@ -1,9 +1,9 @@
 <?php
 
-namespace GetCandy\Settings\Database\Factories;
+namespace Lunar\Settings\Database\Factories;
 
-use GetCandy\Settings\Models\Setting;
-use GetCandy\Shipping\Models\ShippingZone;
+use Lunar\Settings\Models\Setting;
+use Lunar\Shipping\Models\ShippingZone;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class SettingFactory extends Factory

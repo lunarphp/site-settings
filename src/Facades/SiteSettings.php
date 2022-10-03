@@ -1,10 +1,10 @@
 <?php
 
-namespace GetCandy\Settings\Facades;
+namespace Lunar\Settings\Facades;
 
-use GetCandy\Shipping\Interfaces\ShippingMethodManagerInterface;
+use Lunar\Shipping\Interfaces\ShippingMethodManagerInterface;
 use Illuminate\Support\Facades\Facade;
-use GetCandy\Settings\Managers\SiteSettingManager;
+use Lunar\Settings\Managers\SiteSettingManager;
 
 class SiteSettings extends Facade
 {

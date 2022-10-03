@@ -1,13 +1,13 @@
 <?php
 
-namespace GetCandy\Settings\Tests;
+namespace Lunar\Settings\Tests;
 
 use Cartalyst\Converter\Laravel\ConverterServiceProvider;
-use GetCandy\GetCandyServiceProvider;
-use GetCandy\Hub\AdminHubServiceProvider;
-use GetCandy\Settings\SettingsServiceProvider;
-use GetCandy\Stripe\StripePaymentsServiceProvider;
-use GetCandy\Tests\Stubs\User;
+use Lunar\LunarServiceProvider;
+use Lunar\Hub\AdminHubServiceProvider;
+use Lunar\Settings\SettingsServiceProvider;
+use Lunar\Stripe\StripePaymentsServiceProvider;
+use Lunar\Tests\Stubs\User;
 use Illuminate\Support\Facades\Config;
 use Kalnoy\Nestedset\NestedSetServiceProvider;
 use Livewire\LivewireServiceProvider;
@@ -22,7 +22,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
     {
         return [
             AdminHubServiceProvider::class,
-            GetCandyServiceProvider::class,
+            LunarServiceProvider::class,
             LivewireServiceProvider::class,
             MediaLibraryServiceProvider::class,
             ActivitylogServiceProvider::class,

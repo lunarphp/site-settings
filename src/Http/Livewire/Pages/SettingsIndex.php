@@ -1,9 +1,9 @@
 <?php
 
-namespace GetCandy\Settings\Http\Livewire\Pages;
+namespace Lunar\Settings\Http\Livewire\Pages;
 
-use GetCandy\Hub\Http\Livewire\Traits\Notifies;
-use GetCandy\Settings\Models\Setting;
+use Lunar\Hub\Http\Livewire\Traits\Notifies;
+use Lunar\Settings\Models\Setting;
 use Illuminate\Support\Collection;
 use Livewire\Component;
 

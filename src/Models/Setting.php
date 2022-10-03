@@ -1,9 +1,9 @@
 <?php
 
-namespace GetCandy\Settings\Models;
+namespace Lunar\Settings\Models;
 
-use GetCandy\Base\BaseModel;
-use GetCandy\Settings\Database\Factories\SettingFactory;
+use Lunar\Base\BaseModel;
+use Lunar\Settings\Database\Factories\SettingFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Support\Facades\Cache;
 
@@ -34,7 +34,7 @@ class Setting extends BaseModel
     /**
      * Return a new factory instance for the model.
      *
-     * @return \GetCandy\Settings\Factories\SettingFactory
+     * @return \Lunar\Settings\Factories\SettingFactory
      */
     protected static function newFactory(): SettingFactory
     {

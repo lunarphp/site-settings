@@ -1,12 +1,12 @@
 <?php
 
-namespace GetCandy\Settings\Tests\Unit\Managers;
+namespace Lunar\Settings\Tests\Unit\Managers;
 
-use GetCandy\Settings\Models\Setting;
-use GetCandy\Settings\Tests\TestCase;
-use GetCandy\Settings\Facades\SiteSettings;
+use Lunar\Settings\Models\Setting;
+use Lunar\Settings\Tests\TestCase;
+use Lunar\Settings\Facades\SiteSettings;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use GetCandy\Settings\Managers\SiteSettingManager;
+use Lunar\Settings\Managers\SiteSettingManager;
 use Illuminate\Support\Facades\Cache;
 
 class SiteSettingManagerTest extends TestCase

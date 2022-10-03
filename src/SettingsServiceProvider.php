@@ -1,11 +1,11 @@
 <?php
 
-namespace GetCandy\Settings;
+namespace Lunar\Settings;
 
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
-use GetCandy\Hub\Facades\Menu;
-use GetCandy\Settings\Http\Livewire\Pages\SettingsIndex;
+use Lunar\Hub\Facades\Menu;
+use Lunar\Settings\Http\Livewire\Pages\SettingsIndex;
 
 class SettingsServiceProvider extends ServiceProvider
 {

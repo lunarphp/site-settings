@@ -1,8 +1,8 @@
 <?php
 
-namespace GetCandy\Settings\Managers;
+namespace Lunar\Settings\Managers;
 
-use GetCandy\Settings\Models\Setting;
+use Lunar\Settings\Models\Setting;
 use Illuminate\Support\Facades\Cache;
 
 class SiteSettingManager
