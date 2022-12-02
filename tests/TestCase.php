@@ -3,18 +3,13 @@
 namespace Lunar\Settings\Tests;
 
 use Cartalyst\Converter\Laravel\ConverterServiceProvider;
-use Lunar\LunarServiceProvider;
-use Lunar\Hub\AdminHubServiceProvider;
-use Lunar\Settings\SettingsServiceProvider;
-use Lunar\Stripe\StripePaymentsServiceProvider;
-use Lunar\Tests\Stubs\User;
-use Illuminate\Support\Facades\Config;
 use Kalnoy\Nestedset\NestedSetServiceProvider;
 use Livewire\LivewireServiceProvider;
+use Lunar\Hub\AdminHubServiceProvider;
+use Lunar\LunarServiceProvider;
+use Lunar\Settings\SettingsServiceProvider;
 use Spatie\Activitylog\ActivitylogServiceProvider;
 use Spatie\MediaLibrary\MediaLibraryServiceProvider;
-use Stripe\ApiRequestor;
-use Tests\Stripe\MockClient;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {

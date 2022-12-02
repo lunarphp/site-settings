@@ -2,10 +2,10 @@
 
 namespace Lunar\Settings\Http\Livewire\Pages;
 
-use Lunar\Hub\Http\Livewire\Traits\Notifies;
-use Lunar\Settings\Models\Setting;
 use Illuminate\Support\Collection;
 use Livewire\Component;
+use Lunar\Hub\Http\Livewire\Traits\Notifies;
+use Lunar\Settings\Models\Setting;
 
 class SettingsIndex extends Component
 {
@@ -44,8 +44,7 @@ class SettingsIndex extends Component
     /**
      * Handler when site setting id changes
      *
-     * @param int $val
-     *
+     * @param  int  $val
      * @return void
      */
     public function updatedSiteSettingId($val)

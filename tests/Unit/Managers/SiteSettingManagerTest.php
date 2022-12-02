@@ -2,12 +2,12 @@
 
 namespace Lunar\Settings\Tests\Unit\Managers;
 
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Cache;
+use Lunar\Settings\Facades\SiteSettings;
+use Lunar\Settings\Managers\SiteSettingManager;
 use Lunar\Settings\Models\Setting;
 use Lunar\Settings\Tests\TestCase;
-use Lunar\Settings\Facades\SiteSettings;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Lunar\Settings\Managers\SiteSettingManager;
-use Illuminate\Support\Facades\Cache;
 
 class SiteSettingManagerTest extends TestCase
 {
@@ -44,7 +44,6 @@ class SiteSettingManagerTest extends TestCase
 
         $this->assertEquals('bar', $value);
     }
-
 
     /** @test **/
     public function can_use_the_facade()

@@ -2,10 +2,10 @@
 
 namespace Lunar\Settings\Models;
 
-use Lunar\Base\BaseModel;
-use Lunar\Settings\Database\Factories\SettingFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Support\Facades\Cache;
+use Lunar\Base\BaseModel;
+use Lunar\Settings\Database\Factories\SettingFactory;
 
 class Setting extends BaseModel
 {

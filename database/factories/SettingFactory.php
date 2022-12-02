@@ -2,9 +2,8 @@
 
 namespace Lunar\Settings\Database\Factories;
 
-use Lunar\Settings\Models\Setting;
-use Lunar\Shipping\Models\ShippingZone;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Lunar\Settings\Models\Setting;
 
 class SettingFactory extends Factory
 {
